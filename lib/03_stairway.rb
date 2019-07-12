@@ -2,26 +2,22 @@ def real_perform
     launch
     b = 0
     until b == 10
-        puts "Souhaites-tu relancer un dès. Dit 1 pour continuer"
-        party = gets.chomp.to_i
-        if party == 1
-            a = des
-            if a >= 5
-                b = b + 1  
-                puts  "Tu avances d'une marche. Tu es à la marche #{b}."
-                elsif a == 1
-                if 
-                    b > 0
-                    b = b - 1
-                    puts  "Tu descends d'une marche. Tu es à la marche #{b}."
-                    else
-                    puts "Tu es à la marche 0."
-                end
+        puts "Souhaites-tu relancer un dès. Appuie sur Entrée pour continuer"
+        gets.chomp
+        a = des
+        if a >= 5
+            b = b + 1  
+            puts  "Tu avances d'une marche. Tu es à la marche #{b}."
+            elsif a == 1
+            if 
+                b > 0
+                b = b - 1
+                puts  "Tu descends d'une marche. Tu es à la marche #{b}."
                 else
-                puts  "Rien ne se passe. Tu es à la marche #{b}."
+                puts "Tu es à la marche 0."
             end
             else
-            exit
+            puts  "Rien ne se passe. Tu es à la marche #{b}."
         end
     end
     puts  "Félicitation, tu as gagné !" 
