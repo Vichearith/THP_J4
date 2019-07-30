@@ -1,4 +1,4 @@
-# The Hacking Project - Day 4
+# The Hacking Project - Semaine 1 - Jeudi
 
 ## Exercice 0 - Hello
 
